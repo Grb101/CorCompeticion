@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+.header{
+    background-color: black;
+    font-style: normal;
+    padding: 0,6rem;
+    margin: 0 auto;
+  }
+
+.header__logo, .footer__logo {
+    width: 200px;
+    height: 125px;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-header__item {
+    display: inline-block;
+
+}
+
+.menu-header__link {
+    color: white;
+    text-decoration: none;
+    font-family: Rye;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+    padding: 0.8rem;
+    border-color: black;
+    border-radius: 30px;
+    border-style: groove;
+    border-width: 10px;
+    transition: 0.7s;
+}
+
+.menu-header__link:hover{
+    border-color: grey;
+    background-color: #CAD2C5;
+    color: black;
+    
+
+}
+
+@media screen and (max-width: 780px) {
+    nav {
+        flex-direction: column;
+    }
+    .menu-header__link {
+            color: white;
+            text-decoration: none;
+            font-family: Rye;
+            font-size: 18px;
+            margin: 10px;
+            display: flex;
+        }
+    .footer__menuyimg {
+            flex-direction: column;
+        }
+    
+}
+
+@media screen and (max-width: 380px) {
+    nav {
+        flex-direction: column;
+    }
+    .menu-header__link {
+            color: white;
+            text-decoration: none;
+            font-family: Rye;
+            font-size: 14px;
+            margin: 6px;
+            display: flex;
+        }
+}
+    
+
+#grilla_main{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 80vh 1fr 1fr 100vh;
+    max-width: 1200px;
+}
+
+#lema {
+    background-image: url(../Imagenes/Index\ img\ 1.png);
+    background-size: 1300px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #CAD2C5;
+    grid-column: 1/3;
+}
+
+#introduccion {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+#intro_imagen{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+#valores_imagen{
+    grid-column: 1/2;
+    grid-row: 3;
+}
+#nuestros-valores{
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+#Marcas{
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+@media screen and (max-width: 800px) {
+    #grilla_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #Marcas {
+        display: none;
+    }
+}
+
+.lema__titulo {
+    color: white;
+    font-family: Rye;
+    font-size: 45px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    align-items: center;
+}
+
+.intro__imagen{
+    width: fit-content;
+    height: fit-content;
+}
+
+.intro__titulo, .valores__titulo {
+    color: black;
+    font-family: Rye;
+    font-size: 35px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+#introduccion, #nuestros-valores, #intro_imagen  {
+    background-color: #CAD2C5;
+}
+
+#Marcas{
+    background-color: #84A98C;
+}
+
+.marcas__titulo {
+    text-align: center;
+    color: white;
+    font-family: Rye;
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+    display: inline;
+    margin: 0px 140px;
+}
+
+.Marcas__logos--size{
+    height: 130px;
+    width: 130px;
+    margin: 0px 40px;
+    margin-top: 25px;
+}
+
+.Marcas-vol__logos--size{
+    height: 130px;
+    width: 250px;
+    margin: 0px 2px;
+    margin-top: 25px;
+}
+
+.Marcas-ford__logos--size{
+    height: 150px;
+    width: 230px;
+    margin: 0px 10px;
+    margin-top: 25px;
+}
+
+.Marcas-audi__logos--size{
+    height: 150px;
+    width: 200px;
+    margin: 0px 10px;
+    margin-top: 25px;
+
+}
+
+.Marcas-reno__logos--size, .Marcas-bmw__logos--size{
+    height: 130px;
+    width: 130px;
+    margin: 0px 40px;
+
+}
+
+.Marcas-chev__logos--size{
+    height: 100px;
+    width: 200px;
+    margin: 0px 40px;
+    margin-top: 25px;
+}
+
+.Marcas-mer__logos--size{
+    height: 125px;
+    width: 175px;
+    margin: 0px 15px;
+    margin-top: 25px;
+}
+
+.Marcas__logos {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-auto-flow: repeat (1,auto);
+    justify-content: center;
+}
+
+.Marcas__logos-intermedios{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-flow: repeat (1,auto);
+    justify-content: center;
+}
+
+
+
+.intro {
+    text-align: center;
+    margin: 30px;  
+}
+
+
+p {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.valores {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin: 30px; 
+    display: inline-block; 
+}
+
+
+.footer {
+    background-color: #52796F;
+}
+
+.footer__menuyimg{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__menu {
+    display: inline-block;
+}
+.footer-menu__item {
+    display: inline-block;
+    font-family: Rye;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+
+}
+
+li .footer-menu__item {
+    display: inline-block;
+    font-family: Rye;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+}
+
+.footer__menu--boxsize {
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+}
+.footer-menu__menu__item{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 800;
+    list-style: none;
+}
+
+
+.footer__copy {
+    text-align: center;
+}
+
+#Servicios .tarjetas--boxsize{
+   max-width: 100%;
+    background-color: #84A98C;
+    margin: 30px;
+    text-align: center;
+    border: 10px;
+    border-color: black;
+    border-style: double;
+}
+
+.tarjetas__imagenes--size{
+    width: 290px;
+    height: 260px;
+}
+
+#Servicios{
+    background-color: #CAD2C5;
+}
+
+#Servicios h1{
+    color: black;
+    text-decoration: underline;
+    font-family: Rye;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+
+#Servicios h2{
+    color: white;
+    font-family: Rye;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+
+#Servicios .menu__item {
+    color: white;
+    font-family: Lato;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 45px;
+    list-style: none;
+}
+
+#grid_servicios {
+    display: grid;
+    grid-template-columns: repeat( 3 ,auto);
+    grid-template-rows: repeat(3 ,auto);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tajetas--title{
+    grid-column: 1/4;
+}
+
+@media screen and (max-width: 1024px) {
+    #grid_servicios {
+        display: grid;
+        grid-template-columns: repeat( 2 ,auto);
+        grid-template-rows: repeat(4 ,auto);
+    }
+    .tajetas--title{
+        grid-column: 1/3;
+    }
+}
+
+
+@media screen and (max-width: 628px) {
+    #grid_servicios {
+        display: grid;
+        grid-template-columns: repeat( 1 ,auto);
+        grid-template-rows: repeat(7 ,auto);
+    
+    }
+    .tajetas--title{
+        grid-column: 1/2;
+    }
+    .tarjetas__imagenes--size{
+        max-width: 100%;
+      
+    }
+}
+
+
+
+
+
+#Historia, #Ubicacion, #Formulario {
+    background-color: #CAD2C5;
+}
+
+#Historia div{
+    width: 1340px;
+    height: 600px;
+    margin: 5px;
+}
+
+#Historia img{
+    width: 600px;
+    height: 450px;
+    display: inline-block;
+    margin: 50px;
+}
+
+#Historia p, #Equipo p{
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
+    color: black;
+    font-family: Lato;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800;
+    margin: 150px;
+}
+
+#Equipo img{
+    width: 600px;
+    height: 700px;
+    display: inline-block;
+}
+
+#Equipo {
+    background-color: #84A98C;
+    width: 1340px;
+    height: 760px;
+}
+
+#Historia h1, #Equipo h2{
+    color: black;
+    font-family: Rye;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 200;
+    margin: 5px;
+}
+
+#Ubicacion h1, #Formulario h1{
+    font-family: Rye;
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+#Ubicacion h2{
+    color: black;
+    font-family: Lato;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+#Ubicacion iframe{
+    margin: 0px 70px;
+    margin-bottom: 20px;
+}
+
+#Formulario h2{
+    color: black;
+    font-family: Lato;
+    font-size: 32px;
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#Formulario .formulario{
+    color: black;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#Formulario .formulario__label{
+    margin-left: 100px;
+}
+
+
+#Formulario .formulario__input{
+    color: black;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#Formulario .formulario__botton{
+    color: black;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+    height: 50px;
+    width: 125px;
+    background-color: #84A98C;
+}
