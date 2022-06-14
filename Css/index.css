@@ -190,11 +190,18 @@ nav {
     margin: 0px 140px;
 }
 
-.Marcas__logos--size{
+.Marcas__logos--size,.Marcas-ni__logos--size {
     height: 130px;
     width: 130px;
     margin: 0px 40px;
     margin-top: 25px;
+}
+
+
+.Marcas-mer__logos--size,.Marcas-ni__logos--size{
+    animation-name: rotateLogo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .Marcas-vol__logos--size{
@@ -202,6 +209,19 @@ nav {
     width: 250px;
     margin: 0px 2px;
     margin-top: 25px;
+    animation-name: rotateLogo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.Marcas-bmw__logos--size{
+    height: 130px;
+    width: 130px;
+    margin: 0px 30px;
+    margin-top: 25px;
+    animation-name: rotateLogo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .Marcas-ford__logos--size{
@@ -219,7 +239,7 @@ nav {
 
 }
 
-.Marcas-reno__logos--size, .Marcas-bmw__logos--size{
+.Marcas-reno__logos--size{
     height: 130px;
     width: 130px;
     margin: 0px 40px;
@@ -535,4 +555,11 @@ li .footer-menu__item {
     height: 50px;
     width: 125px;
     background-color: #84A98C;
+}
+
+@keyframes rotateLogo{
+    0% {transform: rotate(0deg)
+    }
+    100% {transform: rotate(360deg)
+    }
 }

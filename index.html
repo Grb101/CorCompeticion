@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Css/index.css">
 </head>
 <body>
@@ -30,7 +32,7 @@
          </nav>
      </header>
      <main id="grilla_main">
-      <section id="lema">
+      <section id="lema" class="animare__animated animate__fadeInUp">
         <br/>
         <br/>
         <br/>
@@ -44,7 +46,7 @@
         <br/>
         <br/>
         <br/>
-        <h1 class="lema__titulo">Tus mecanicos de confianza</h1>
+        <h1 class="lema__titulo animate__animated animate__fadeInUp">Tus mecanicos de confianza</h1>
         <br/>
         <br/>
         <br/>
@@ -60,7 +62,7 @@
        </section>
        <section id="introduccion">
         <article>
-            <div class="intro">
+            <div class="intro" data-aos="zoom-in-right">
                  <h2 class="intro__titulo">Titulo 2</h2>
                  <p class="intro_parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa excepturi eligendi eos beatae soluta hic et ratione necessitatibus dolores laboriosam velit voluptates porro molestias, repellat nobis nemo suscipit. Eius, omnis.</p>
             </div>
@@ -75,7 +77,7 @@
        </aside>
        <section id="nuestros-valores">
         <article>
-            <div class="valores">
+            <div class="valores" data-aos="zoom-in-left">
                  <h2 class="valores__titulo">Titulo 3</h2>
                  <p class="valores__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa excepturi eligendi eos beatae soluta hic et ratione necessitatibus dolores laboriosam velit voluptates porro molestias, repellat nobis nemo suscipit. Eius, omnis.</p>
             </div>
@@ -90,7 +92,7 @@
                  <img src="./Imagenes/Logos marcas/Marca 3.png" alt="fiat" class="Marcas__logos--size">
                  <img src="./Imagenes/Logos marcas/Marca 4.png" alt="mazda" class="Marcas__logos--size">
                  <img src="./Imagenes/Logos marcas/Marca 5.png" alt="ford" class="Marcas-ford__logos--size">
-                 <img src="./Imagenes/Logos marcas/Marca 6.png" alt="citroen" class="Marcas__logos--size">
+                 <img src="./Imagenes/Logos marcas/Marca 8.png" alt="citroen" class="Marcas-bmw__logos--size">
             </div>
             <br/>
             <br/>
@@ -98,20 +100,20 @@
             <br/>
             <div class="Marcas__logos-intermedios">
                  <img src="./Imagenes/Logos marcas/Marca 7.png" alt="reno" class="Marcas-reno__logos--size">
-                 <h3 class="marcas__titulo">Trabajamos todas las marcas</h3>
-                 <img src="./Imagenes/Logos marcas/Marca 8.png" alt="bmw" class="Marcas-bmw__logos--size">
+                 <h3 class="marcas__titulo" data-aos="zoom-in-down">Trabajamos todas las marcas</h3>
+                 <img src="./Imagenes/Logos marcas/Marca 6.png" alt="bmw" class="Marcas__logos--size">
             </div>
             <br/>
             <br/>
             <br/>
             <br/>
             <div class="Marcas__logos">
-                <img src="./Imagenes/Logos marcas/Marca 9.png" alt="Fer" class="Marcas__logos--size">
+                <img src="./Imagenes/Logos marcas/Marca 11.png" alt="nissan" class="Marcas-ni__logos--size">
                 <img src="./Imagenes/Logos marcas/Marca 10.png" alt="Toyota" class="Marcas__logos--size">
-                <img src="./Imagenes/Logos marcas/Marca 11.png" alt="nissan" class="Marcas__logos--size">
+                <img src="./Imagenes/Logos marcas/Marca 9.png" alt="ferrari" class="Marcas__logos--size">
                 <img src="./Imagenes/Logos marcas/Marca 12.png" alt="chevrolet" class="Marcas-chev__logos--size">
-                <img src="./Imagenes/Logos marcas/Marca 13.png" alt="mercedenz" class="Marcas-mer__logos--size">
                 <img src="./Imagenes/Logos marcas/Marca 14.png" alt="peugeot" class="Marcas__logos--size">
+                <img src="./Imagenes/Logos marcas/Marca 13.png" alt="mercedez" class="Marcas-mer__logos--size">
             </div>
             <br/>
         </article>
@@ -154,5 +156,7 @@
          <br/>
          <h4 class="footer__copy">© 2022 Cor Competición, todos los derechos reservados.</h4>
      </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
