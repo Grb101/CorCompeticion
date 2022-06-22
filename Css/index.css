@@ -259,6 +259,7 @@ p {
 
 .footer {
     background-color: #52796F;
+    margin-top: 10px;
 }
 
 .footer__menuyimg{
@@ -484,6 +485,12 @@ p {
 .main, .article, .aside {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.carousel{
+    max-width: 1300px;
+    margin: 0 auto;
+grid-column: 1/3;
 }
 
 @media screen and (max-width: 780px) {
