@@ -1,0 +1,61 @@
+.Servicios {
+    
+     #Servicios {
+         background-color: #CAD2C5;
+
+         #grid_servicios {
+             display: grid;
+             grid-template-columns: repeat( 3 ,auto);
+             grid-template-rows: repeat(3 ,auto);
+             max-width: 1200px;
+             margin: 0 auto;
+
+             .tarjetas--title{
+                grid-column: 1/4;
+
+                h1 {
+                    color: black;
+                    text-decoration: underline;
+                    font-family: Rye;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 200;
+                }
+             }
+             .tarjetas--boxsize{
+                 max-width: 100%;
+                 background-color: #84A98C;
+                 margin: 30px;
+                 text-align: center;
+                 border: 10px;
+                 border-color: black;
+                 border-style: double;
+
+                 h2 {
+                    color: white;
+                    font-family: Rye;
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 200;
+                 }
+
+                 .tarjetas__imagenes--size{
+                    width: 290px;
+                    height: 260px;
+                 }
+
+                 .menu__item{
+                    color: white;
+                    font-family: Lato;
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: 800;
+                    line-height: 45px;
+                    list-style: none;
+                 }
+            }
+         }
+     }
+}
