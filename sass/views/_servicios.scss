@@ -9,18 +9,18 @@
              grid-template-rows: repeat(3 ,auto);
              max-width: 1200px;
              margin: 0 auto;
+             row-gap: map-get($spacings, spacing-medium);
+             column-gap: map-get($spacings, spacing-small);
 
              .tarjetas--title{
                 grid-column: 1/4;
 
                 h1 {
-                    color: black;
+                    @include text(black, Rye, 40px, 200);
                     text-decoration: underline;
-                    font-family: Rye;
-                    font-size: 40px;
                     text-transform: uppercase;
                     text-align: center;
-                    font-weight: 200;
+
                 }
              }
              .tarjetas--boxsize{
@@ -33,25 +33,19 @@
                  border-style: double;
 
                  h2 {
-                    color: white;
-                    font-family: Rye;
-                    font-size: 32px;
+                    @include text(white, Rye, 32px, 200);
                     text-transform: uppercase;
                     text-align: center;
-                    font-weight: 200;
+
                  }
 
                  .tarjetas__imagenes--size{
-                    width: 290px;
-                    height: 260px;
+                    @include sizes(290px, 260px)
                  }
 
                  .menu__item{
-                    color: white;
-                    font-family: Lato;
-                    font-size: 24px;
+                    @include text(white, Lato, 24px, 800);
                     text-align: center;
-                    font-weight: 800;
                     line-height: 45px;
                     list-style: none;
                  }

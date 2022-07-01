@@ -1,7 +1,11 @@
 // MISC
-
+@import './misc/mixins';
+@import './misc/normalize';
+@import './misc/variables';
 
 // PARTIALS
+@import './partials/header';
+@import './partials/footer';
 
 // VIEWS
 @import './views/_home.scss';

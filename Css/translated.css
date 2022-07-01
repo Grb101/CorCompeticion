@@ -1,3 +1,15 @@
+.spacing-large {
+  padding: 6rem; }
+
+.spacing-medium {
+  padding: 2.5rem; }
+
+.spacing-small {
+  padding: 2rem; }
+
+.spacing-xsmall {
+  padding: 1.5rem; }
+
 .Servicios #Servicios {
   background-color: #CAD2C5; }
   .Servicios #Servicios #grid_servicios {
@@ -5,17 +17,19 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     max-width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    row-gap: 2.5rem;
+    column-gap: 2rem; }
     .Servicios #Servicios #grid_servicios .tarjetas--title {
       grid-column: 1/4; }
       .Servicios #Servicios #grid_servicios .tarjetas--title h1 {
         color: black;
-        text-decoration: underline;
         font-family: Rye;
         font-size: 40px;
+        font-weight: 200;
+        text-decoration: underline;
         text-transform: uppercase;
-        text-align: center;
-        font-weight: 200; }
+        text-align: center; }
     .Servicios #Servicios #grid_servicios .tarjetas--boxsize {
       max-width: 100%;
       background-color: #84A98C;
@@ -28,9 +42,9 @@
         color: white;
         font-family: Rye;
         font-size: 32px;
+        font-weight: 200;
         text-transform: uppercase;
-        text-align: center;
-        font-weight: 200; }
+        text-align: center; }
       .Servicios #Servicios #grid_servicios .tarjetas--boxsize .tarjetas__imagenes--size {
         width: 290px;
         height: 260px; }
@@ -38,7 +52,7 @@
         color: white;
         font-family: Lato;
         font-size: 24px;
-        text-align: center;
         font-weight: 800;
+        text-align: center;
         line-height: 45px;
         list-style: none; }

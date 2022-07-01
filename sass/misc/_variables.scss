@@ -1,0 +1,15 @@
+// Spacings
+
+$spacings :(
+    spacing-large: 6rem,
+    spacing-medium: 2.5rem,
+    spacing-small: 2rem,
+    spacing-xsmall: 1.5rem,
+);
+
+@each $key, $val in $spacings {
+    .#{$key} {
+        padding: #{$val};
+    }
+    
+}
