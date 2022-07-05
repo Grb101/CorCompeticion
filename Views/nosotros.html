@@ -7,6 +7,9 @@
     <meta name="description" content="Cor Competicion es un taller mecanico de autos ubicado en el barrio de Boedo desde hace mas de 30 años siempre al servicio de nuestros fieles clientes que nos brindan su confianza">
     <meta name="keywords" content="taller, taller mecanico, arreglar auto, familiar, capital, capital federal, boedo">
     <title>Cor Competicion Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/index.css">
 </head>
 <body>
@@ -33,64 +36,67 @@
     </header>
     <main>
         <section id="Historia">
-            <article>
+            <article class="historia__grid">
                 <h1>Nuestra historia</h1>
-                <div>
-                     <img src="../Imagenes/Imagenes nuestra historia/Taller1.png" id="taller escaleras">
+                <aside>
+                     <img src="../Imagenes/Imagenes nuestra historia/Taller1.png" id="taller-escaleras">
+                </aside>     
+                <div>     
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur ab aperiam quasi maxime veritatis ad vero debitis molestiae? Atque, architecto. Saepe temporibus cupiditate ad, animi iste sunt aperiam doloribus?</p>
                 </div>
-            </article>
-            <article>
                 <div>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde rerum, fugiat qui, architecto quasi consectetur perferendis delectus placeat, quae modi laboriosam expedita iure quidem reiciendis! Dolor nobis perferendis cupiditate.</p>
+                </div> 
+                <aside>   
                      <img src="../Imagenes/Imagenes nuestra historia/Taller2.jpg" id="taller escritorio">
-                </div>
-            </article>
-        </section>
-        <section id="Equipo">
-            <article>
+                </aside>  
                 <h2>El Equipo</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab placeat sunt optio consectetur, architecto neque sequi pariatur quod, eaque, rem dolorem inventore a facere aperiam debitis est. Nobis, debitis sit.</p>
-                <img src="../Imagenes/Imagenes nuestra historia/Taller3.jpg" id="equipo">
+                <aside class="img_equipo">
+                     <img src="../Imagenes/Imagenes nuestra historia/Taller3.jpg" id="equipo">
+                </aside>
+                <div class="texto_equipo">
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab placeat sunt optio consectetur, architecto neque sequi pariatur quod, eaque, rem dolorem inventore a facere aperiam debitis est. Nobis, debitis sit.</p>
+                </div>
             </article>
         </section>
     </main>
     <footer class="footer">
         <section class="footer__menuyimg">
-         <ul class="footer__menu">
             <div class="footer__menu--boxsize">
-             <li class="footer-menu__item">Nuestras redes:</li>
-               <ul>
-                 <li class="footer-menu__menu__item">Facebook</li>
-                 <li class="footer-menu__menu__item">Instagram</li>
-                 <li class="footer-menu__menu__item">Youtube</li>
-               </ul>
+                <h4 class="footer-menu__item">Horarios:</h4>
+                  <ul>
+                     <li class="footer-menu__menu__item">Lu-Ju 08-19 Hrs</li>
+                     <li class="footer-menu__menu__item">Vie 8-18 Hrs</li>
+                     <li class="footer-menu__menu__item">Sa-Dom Cerrado</li>
+                  </ul>
             </div>
             <div class="footer__menu--boxsize">
-             <li class="footer-menu__item">Nuestros horarios:</li>
-               <ul>
-                  <li class="footer-menu__menu__item">Lu-Jue 08:00 a 19:00 Hrs</li>
-                  <li class="footer-menu__menu__item">Vie 08:30 a 18:30 Hrs</li>
-                  <li class="footer-menu__menu__item">Sa-Dom Cerrado</li>
-               </ul>
+                <h4 class="footer-menu__item">
+                    <a href="../Views/ubicacion.html" class="footer-menu__item">Ubicacion</a>
+                </h4>
+            </div>
+            <picture>
+                <img src="../Imagenes/Logo footer.svg" alt="Imagen Logo" class="footer__logo">
+            </picture>
+            <div class="footer__menu--boxsize">
+             <h4>
+                <a href="../Views/contacto.html" class="footer-menu__item">Contacto</a>
+             </h4>
             </div>
             <div class="footer__menu--boxsize">
-             <li>
-                <a href="./Views/contacto.html" class="footer-menu__item">Contacto</a>
-             </li>
+                <h4 class="footer-menu__item">Redes:</li>
+                  <ul>
+                    <li class="footer-menu__menu__item">Facebook</li>
+                    <li class="footer-menu__menu__item">Instagram</li>
+                    <li class="footer-menu__menu__item">Youtube</li>
+                  </h4>
             </div>
-            <div class="footer__menu--boxsize">
-             <li class="footer-menu__item">
-                 <a href="./Views/ubicacion.html" class="footer-menu__item">Ubicacion</a>
-             </li>
-            </div>
-         </ul>
-         <picture>
-         <img src="../Imagenes/Logo footer.svg" alt="Imagen Logo" class="footer__logo">
-        </picture>
        </section>
          <br/>
          <h4 class="footer__copy">© 2022 Cor Competición, todos los derechos reservados.</h4>
      </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
