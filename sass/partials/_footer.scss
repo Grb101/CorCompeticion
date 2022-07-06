@@ -1,0 +1,54 @@
+.footer{
+    background-color: #52796F;
+    margin-top: 10px;
+
+    .footer__menuyimg{
+        display: flex;
+        justify-content: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+
+        .footer__menu--boxsize{
+            list-style: none;
+
+            .footer-menu__item{
+                display: inline-block;
+                font-family: Rye;
+                font-size: 24px;
+                font-weight: 200;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+
+            }
+
+            ul {
+
+                .footer-menu__menu__item{
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-weight: 800;
+                    list-style: none;
+
+                }
+            }
+
+        }
+
+        picture{
+
+            .footer__logo{
+                width: 200px;
+                height: 125px;
+                margin-right: 40px;
+            }
+
+        }
+    }
+
+    .footer__copy{
+        text-align: center;
+
+    }
+}

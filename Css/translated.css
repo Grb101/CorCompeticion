@@ -1,3 +1,8 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
 .spacing-large {
   padding: 6rem; }
 
@@ -9,6 +14,219 @@
 
 .spacing-xsmall {
   padding: 1.5rem; }
+
+.header {
+  background-color: black;
+  font-style: normal;
+  padding: 0,6rem;
+  margin: 0 auto; }
+  .header .header_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    .header .header_nav picture .header__logo {
+      width: 200px;
+      height: 125px; }
+    .header .header_nav .header__menu .menu-header__item {
+      display: inline-block; }
+      .header .header_nav .header__menu .menu-header__item .menu-header__link {
+        color: white;
+        text-decoration: none;
+        font-family: Rye;
+        font-size: 20px;
+        margin: 5px;
+        display: flex;
+        padding: 0.8rem;
+        border-color: black;
+        border-radius: 30px;
+        border-style: groove;
+        border-width: 10px;
+        transition: 0.7s; }
+        .header .header_nav .header__menu .menu-header__item .menu-header__link:hover {
+          border-color: grey;
+          background-color: #CAD2C5;
+          color: black; }
+
+.footer {
+  background-color: #52796F;
+  margin-top: 10px; }
+  .footer .footer__menuyimg {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-evenly; }
+    .footer .footer__menuyimg .footer__menu--boxsize {
+      list-style: none; }
+      .footer .footer__menuyimg .footer__menu--boxsize .footer-menu__item {
+        display: inline-block;
+        font-family: Rye;
+        font-size: 24px;
+        font-weight: 200;
+        text-decoration: none;
+        color: black;
+        text-align: center; }
+      .footer .footer__menuyimg .footer__menu--boxsize ul .footer-menu__menu__item {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 800;
+        list-style: none; }
+    .footer .footer__menuyimg picture .footer__logo {
+      width: 200px;
+      height: 125px;
+      margin-right: 40px; }
+  .footer .footer__copy {
+    text-align: center; }
+
+#grilla_main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-width: 1300px;
+  margin: auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: #CAD2C5; }
+  #grilla_main #lema {
+    background-size: 1300px 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #CAD2C5;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center; }
+    #grilla_main #lema .lema_titulo {
+      color: white;
+      font-family: Rye;
+      font-size: 45px;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 200;
+      align-self: center; }
+  #grilla_main #introduccion {
+    grid-column: 1/2;
+    grid-row: 2; }
+    #grilla_main #introduccion article .intro {
+      text-align: center;
+      padding: 40px; }
+      #grilla_main #introduccion article .intro .intro_titulo {
+        color: black;
+        font-family: Rye;
+        font-size: 35px;
+        font-weight: 200;
+        text-decoration: underline; }
+      #grilla_main #introduccion article .intro .intro_parrafo {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 800; }
+  #grilla_main #Intro_imagen {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: #CAD2C5; }
+    #grilla_main #Intro_imagen .intro__imagen {
+      width: fit-content;
+      height: fit-content; }
+  #grilla_main #valores_imagen {
+    grid-column: 1/2;
+    grid-row: 3; }
+  #grilla_main #nuestros-valores {
+    grid-column: 2/3;
+    grid-row: 3; }
+    #grilla_main #nuestros-valores article .valores {
+      text-align: center;
+      padding: 40px; }
+      #grilla_main #nuestros-valores article .valores .valores__titulo {
+        color: black;
+        font-family: Rye;
+        font-size: 35px;
+        font-weight: 200;
+        text-decoration: underline; }
+      #grilla_main #nuestros-valores article .valores .valores__parrafo {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 800; }
+  #grilla_main #Marcas {
+    grid-column: 1/3;
+    grid-row: 4;
+    padding-bottom: 15px;
+    background-color: #84A98C; }
+    #grilla_main #Marcas .Marcas .Marcas__logos {
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      grid-auto-flow: repeat 1, auto;
+      justify-content: center; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-vol__logos--size {
+        height: 130px;
+        width: 250px;
+        margin: 0px 2px;
+        margin-top: 25px;
+        animation-name: rotateLogo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-audi__logos--size {
+        height: 150px;
+        width: 200px;
+        margin: 0px 10px;
+        margin-top: 25px; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-ford__logos--size {
+        height: 150px;
+        width: 230px;
+        margin: 0px 10px;
+        margin-top: 25px; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-bmw__logos--size {
+        height: 130px;
+        width: 130px;
+        margin: 0px 30px;
+        margin-top: 25px;
+        animation-name: rotateLogo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-ni__logos--size {
+        height: 130px;
+        width: 130px;
+        margin: 0px 40px;
+        margin-top: 25px;
+        animation-name: rotateLogo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-chev__logos--size {
+        height: 100px;
+        width: 200px;
+        margin: 0px 40px;
+        margin-top: 25px; }
+      #grilla_main #Marcas .Marcas .Marcas__logos .Marcas-mer__logos--size {
+        animation-name: rotateLogo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        height: 125px;
+        width: 175px;
+        margin: 0px 15px;
+        margin-top: 25px; }
+    #grilla_main #Marcas .Marcas .Marcas__logos-intermedios {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-auto-flow: repeat 1, auto;
+      justify-content: center; }
+      #grilla_main #Marcas .Marcas .Marcas__logos-intermedios .Marcas-reno__logos--size {
+        height: 130px;
+        width: 130px;
+        margin: 0px 40px; }
+      #grilla_main #Marcas .Marcas .Marcas__logos-intermedios .marcas__titulo {
+        text-align: center;
+        color: white;
+        font-family: Rye;
+        font-size: 35px;
+        font-weight: 200;
+        text-transform: uppercase;
+        display: inline;
+        margin: 0px 140px; }
+      #grilla_main #Marcas .Marcas .Marcas__logos-intermedios .Marcas__logos--size {
+        height: 130px;
+        width: 130px;
+        margin: 0px 40px;
+        margin-top: 25px; }
 
 .Servicios #Servicios {
   background-color: #CAD2C5; }
@@ -56,3 +274,69 @@
         text-align: center;
         line-height: 45px;
         list-style: none; }
+
+#Historia {
+  background-color: #CAD2C5; }
+  #Historia .historia__grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    align-items: center; }
+    #Historia .historia__grid h1 {
+      grid-column: 1/3;
+      color: black;
+      font-family: Rye;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: center;
+      font-weight: 200;
+      margin: 5px; }
+    #Historia .historia__grid h2 {
+      grid-column: 1/3;
+      grid-row: 4;
+      color: black;
+      font-family: Rye;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: center;
+      font-weight: 200;
+      margin: 5px; }
+    #Historia .historia__grid .img_equipo {
+      grid-column: 1/3;
+      grid-row: 5;
+      padding: 30px;
+      margin: 0 auto;
+      max-width: 550px; }
+    #Historia .historia__grid .texto_equipo {
+      grid-column: 1/3;
+      grid-row: 6;
+      text-align: center; }
+
+#Ubicacion {
+  margin: 0 auto;
+  max-width: 1200px; }
+  #Ubicacion article .titulo {
+    font-family: Rye;
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase; }
+  #Ubicacion article .semi-titulo {
+    color: black;
+    font-family: Lato;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 800; }
+  #Ubicacion article iframe {
+    width: 1200px;
+    height: 500px;
+    border-radius: 2cm; }

@@ -1,0 +1,36 @@
+#Ubicacion{
+    margin: 0 auto;
+    max-width: 1200px;
+
+    article{
+
+        .titulo{
+            font-family: Rye;
+            font-size: 40px;
+            font-weight: 200;
+            text-decoration: underline;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .semi-titulo{
+            color: black;
+            font-family: Lato;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 800;
+
+        }
+
+        iframe{
+            width: 1200px;
+            height: 500px;
+            border-radius: 2cm;
+
+        }
+    }
+}

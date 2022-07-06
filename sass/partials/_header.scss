@@ -1,0 +1,51 @@
+.header {
+    background-color: black;
+    font-style: normal;
+    padding: 0,6rem;
+    margin: 0 auto;
+
+    .header_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        picture {
+
+            .header__logo {
+                width: 200px;
+                height: 125px;
+            }
+        }
+
+        .header__menu {
+
+            .menu-header__item {
+                display: inline-block;
+
+                .menu-header__link{
+                    color: white;
+                    text-decoration: none;
+                    font-family: Rye;
+                    font-size: 20px;
+                    margin: 5px;
+                    display: flex;
+                    padding: 0.8rem;
+                    border-color: black;
+                    border-radius: 30px;
+                    border-style: groove;
+                    border-width: 10px;
+                    transition: 0.7s;
+                    
+                    &:hover{
+                        border-color: grey;
+                        background-color: #CAD2C5;
+                        color: black;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
